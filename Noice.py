@@ -2,6 +2,7 @@ import discord
 from discord.ext import commands
 import random
 import os
+from config import *
 
 
 
@@ -48,4 +49,4 @@ for file in os.listdir('./features'):
 	if file.endswith('.py') and not file.startswith('_'):
 		bot.load_extension(f'features.{file[:-3]}')
 
-bot.run('NzMzNjY2MjEzNjU3NTc1NTE0.XxGd6A.6-N_VNP8mIS81z3yDfYqQneqKFQ')
+bot.run(BOT_TOKEN)
